@@ -13,39 +13,41 @@
 </head>
 
 <body>
-    <div class="container w-75">
+    <div class="container w-75" id="principal">
         <div class="card">
             <div class="card-header">
                 <h5>Factura</h5>
             </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <label>Numero Factura</label>
-                        <input type="text" name="num-factura" class="form-control">
+            <form id="formHeaders">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label>Numero Factura</label>
+                            <input type="text" name="num-factura" class="form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <label>Fecha</label>
+                            <input type="date" name="fecha" class="form-control" value="2022-10-12" readonly>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <label>Fecha</label>
-                        <input type="date" name="fecha" class="form-control">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <label>N. Documneto</label>
-                        <input type="text" name="documento" class="form-control">
-                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label>N. Documneto</label>
+                            <input type="text" name="documento" class="form-control">
+                        </div>
 
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <label>Nombre</label>
-                        <input type="text" name="nombre" class="form-control">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label>Nombre</label>
+                            <input type="text" name="nombre" class="form-control">
+                        </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="card">
-        <div class="card-header">
+            <div class="card-header">
                 <h5>Articulos</h5>
             </div>
             <div class="card-body" id="divArticulos">
@@ -53,6 +55,9 @@
         </div>
         <div class="card d-flex">
             <button class="botonadd">+</button>
+        </div>
+        <div>
+            <button class="btn btn-warning" id="saveData">Guardar</button>
         </div>
 
     </div>
