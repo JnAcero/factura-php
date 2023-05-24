@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="js/bootstrap/bootstrap.min.js" defer></script>
+    <script src="./js/app.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container w-50">
+    <div class="container w-75">
         <div class="card">
             <div class="card-header">
                 <h5>Factura</h5>
@@ -44,37 +45,14 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-body">
-                <div class="container details">
-                    <div class="row g-0">
-                        <div class="col">
-                            <label>Nombre</label>
-                            <input type="text" name="nombre-articulo" class="form-control">
-                        </div>
-                        <div class="col">
-                            <label>Valor</label>
-                            <input type="number" name="valor-articulo" class="form-control">
-                        </div>
-                        <div class="col">
-                            <label>Cantidad</label>
-                            <input type="text" name="cantidad" class="form-control">
-                        </div>
-                        <div class="col">
-                            <label>Total</label>
-                            <input type="text" name="total" class="form-control">
-                        </div>
-                        <div class="col">
-                           <label></label>
-                           <div class="d-flex">                            
-                            <button class="btn btn-warning">+</button>
-                            <button class="btn btn-success">-</button>
-                        </div>
-
-                        </div>
-                    </div>
-
-                </div>
+        <div class="card-header">
+                <h5>Articulos</h5>
             </div>
+            <div class="card-body" id="divArticulos">
+            </div>
+        </div>
+        <div class="card d-flex">
+            <button class="botonadd">+</button>
         </div>
 
     </div>
